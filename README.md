@@ -335,18 +335,23 @@ For detailed power analysis results and further insights, please refer to the pr
 ### Power Simulations : Modified SVL on TSPC DFF
 
 **Fig: Leakage Current(Static Power Dissipation) waveform:**
+
 <img width="403" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/52855f39-809c-4c29-845d-8418abd2bec0">
+
 
 **Fig: Total Power & Dynamic Power Dissipation waveform:**
 
+
 <img width="403" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/e7e8e55b-feee-40e8-bdcc-a17b04f35078">
+
 
 <img width="352" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/d6312c21-fb28-460b-b8cb-d1cdc06e1c4e">
 
 
+
 <img width="418" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/9b5a18ed-2d98-4a94-9b72-0171b3798277">
 
-
+-----
 
 ## Table :Visualizes the analogy of different CMOS DFFs by using variant supply voltage level (SVL) techniques:
 
