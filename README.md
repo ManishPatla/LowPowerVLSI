@@ -1,3 +1,6 @@
+<img width="264" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/03aff796-a916-490f-8570-c4a8085c56f9">
+
+
 <img width="356" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/3d9bbc14-91a3-41c0-8f8f-5b2725daa40e">
 
 # LowPowerVLSI
