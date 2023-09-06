@@ -296,6 +296,85 @@ For detailed power analysis results and further insights, please refer to the pr
 
 ## Power Simulations Graph: 
 
+### TSPC DFF: Power Simulations
+
+**Fig: Leakage Current(Static Power dissipation) waveform for TSPC DFF**
+
+<img width="684" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/f54120aa-326a-46f5-910d-21e21438daf4">
+
+**Fig: Propagation delay for TSPC CMOS DFF**
+
+<img width="658" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/eb527f6c-0bd5-4626-a53e-b10983863849">
+
+**Fig: Dynamic Power Graph of TSPC CMOS DFF**
+
+<img width="685" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/08b1caf1-11b4-49aa-9f56-0505fcd9bfee">
+
+**Fig: Total Power Graph for TSPC CMOS DFF**
+
+<img width="685" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/decd9ef2-3ee5-4463-be2f-2c097548b1f6">
+
+### Power Simulations: SVL Enforced on TSPC CMOS DFF
+
+**Fig: Leakage Current (Static Power Dissipation) of SVL TSPC DFF**
+
+<img width="595" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/bd586b36-58db-4026-ad48-892e769ec67d">
+
+**Fig: Dynamic Power Dissipation Graph of SVL TSPC DF**
+
+<img width="400" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/4b6e6bc6-a9b9-45ad-b870-61f5f992cc89">
+
+**Fig: Total Power Dissipation of SVL TSPC DFF:**
+
+<img width="403" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/aba5c1dd-e523-434d-b683-0d42ec69b732">
+
+
+<img width="684" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/5e2d52f1-bb2a-4939-b73d-c357f328decd">
+
+
+### Power Simulations : Modified SVL on TSPC DFF
+
+**Fig: Leakage Current(Static Power Dissipation) waveform:**
+<img width="403" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/52855f39-809c-4c29-845d-8418abd2bec0">
+
+**Fig: Total Power & Dynamic Power Dissipation waveform:**
+
+<img width="403" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/e7e8e55b-feee-40e8-bdcc-a17b04f35078">
+
+<img width="352" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/d6312c21-fb28-460b-b8cb-d1cdc06e1c4e">
+
+
+<img width="418" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/9b5a18ed-2d98-4a94-9b72-0171b3798277">
+
+
+
+## Table :Visualizes the analogy of different CMOS DFFs by using variant supply voltage level (SVL) techniques:
+
+<img width="428" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/1345149e-d46b-4f09-a935-697d608897a3">
+
+## Conclusion
+
+
+In the realm of VLSI technology, power consumption plays a pivotal role, especially in battery-operated circuits. This project focused on designing a low-power CMOS D Flip-Flop (DFF) using the SVL (Self-Voltage Level) method, with a strong emphasis on optimizing power dissipation, ensuring better backup, and enhancing the supply potential for the designed circuit.
+
+The application of the SVL method has significantly improved the CMOS DFF circuit in various ways:
+
+- **Power Dissipation**: The SVL method has effectively reduced power consumption, which is crucial for battery-operated applications.
+
+- **Supply Potential**: The circuit has been optimized to operate efficiently with a supply potential of 1.8V, ensuring better energy utilization.
+
+- **Leakage Current**: The altered SVL method enforced in CMOS DFF design has managed to optimize power consumption and reduce leakage currents to a considerable extent.
+
+The schematic design of this project consists of a reduced number of clocked transistors, simultaneously minimizing dynamic power consumption and leakage current for the required circuit.
+
+The comparative analysis between SVL and Altered SVL methods has been discussed, primarily focusing on the constraints associated with reduced power dissipation at a voltage potential of 1.8V. The simulated outcomes clearly demonstrate that CMOS DFPFP with Altered SVL methods outperforms normal SVL methods, making it an ideal choice for low-power consumption designs.
+
+In conclusion, this project showcases the significance of low-power CMOS DFF designs, emphasizing the importance of power optimization in modern VLSI applications. The utilization of SVL and Altered SVL methods offers promising results, contributing to energy-efficient and high-performance circuit designs.
+
+
+
+
+
 
 
 
