@@ -90,16 +90,13 @@ For in-depth technical details and analysis, please refer to the project documen
 
 ### Circuit and Truth Table
 
-![Positive Edge Triggered 5T-TSPC D Flip-flop Circuit](circuit.png)
+![Circuit svl TSPC DFF](https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/06d52d94-6d6e-4bd9-995d-82860aad4fb4)
+
 
 **Figure 1: Circuit of Positive Edge Triggered 5T-TSPC D Flip-flop**
 
-| D Input | Clock (clk) | Q Output |
-|---------|-------------|----------|
-|    0    |      0      |    Q     |
-|    0    |      1      |    0     |
-|    1    |      0      |    Q     |
-|    1    |      1      |    1     |
+<img width="415" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/8844cbf7-12a3-46c9-976d-c9d99974d8da">
+
 
 **Table 1: Truth Table of Positive Edge Triggered 5T-TSPC D Flip-flop**
 
@@ -124,6 +121,44 @@ The working principle of this flip-flop can be summarized as follows:
 ### Significance of TSPC Design
 
 TSPC (True Single Phase Clocked) logic design utilizes one aspect of the clock pulse, avoiding skew problems during the design process, and performs well in digital structures. Due to these advantages, TSPC designs are known for their low power consumption and improved performance in digital systems.
+
+----------------------
+
+## Design Strategy 2: SVL Method Enforced on CMOS D Flip-Flop
+
+### Introduction
+
+SVL, which stands for Self-Voltage Level, is a technique utilized to minimize power dissipation in clocked structures, particularly in Flip-flops when they are in standby mode.
+
+#### SVL Working Principle
+
+- When Clock=0, the SVL method employs both PMOS and NMOS transistors equivalently for the pull-up and pull-down networks. The gate of pull-up transistors is connected to the complement of the clock signal, while the gate of pull-down transistors is connected to the clock signal itself. This technique reduces leakage power by using the clock signal as a control signal to manage the supply voltage to the D flip-flop. Hence, the name "self-voltage level" is justified.
+
+- When the clock = 1, and clock bar (complement of clock) = 0, Psw1 (power switch 1) will become ON, and Nsw1 (negative switch 1) will be in the off state. The clocked circuit will be connected to Vdd.
+
+- When the clock = 0, the circuit is in standby mode and does not require a higher power supply to maintain operation. Even if we reduce the supply voltage during standby mode, it will function perfectly, reducing power consumption, especially leakage power that occurs when transistors are in the off state.
+
+### Operation in Active Mode (clock = 1)
+
+- In active mode, Psw1 is ON, Nsw2 is ON, Psw2 is OFF, and Nsw1 is OFF. The D flip-flop is connected to Vdd and ground for normal circuit operation.
+
+    - If D_in = 0, P1, N1, N3 are ON, and P2, N2 are OFF, connecting Q to ground (Q = 0).
+    
+    - If D_in = 1, P1, N3 are OFF, and N1, N2, P2 are ON, connecting Q to Vdd (Q = 1).
+
+### Operation in Standby Mode (clock = 0)
+
+- In standby mode, Psw1, Nsw2 are in the OFF state, i.e., open circuits. Nsw1 is ON but, as it is used as a pull-up, it provides Vdd-Vth as the supply voltage for the D flip-flop. The drop is due to the resistive nature of NMOS when used as a pull-up. Similarly, Psw2 is ON, but as it is used as a pull-down, it provides a finite positive voltage instead of ground (0 volts). This virtual ground positive voltage slightly reverse biases the NMOS transistors of the D flip-flop, reducing leakage power in standby mode. The PMOS transistors of the D flip-flop also have reduced leakage power, as they are connected to a virtual supply in standby mode.
+
+
+
+**Figure 2: Schematic Diagram of CMOS D Flip-Flop using SVL Method**
+
+For further insights and simulation outcomes, please refer to the project documentation.
+
+---
+
+**Note**: Insert relevant images (e.g., `schematic_diagram.png`) as needed.
 
 
 
