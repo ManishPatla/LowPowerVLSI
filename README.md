@@ -150,7 +150,7 @@ SVL, which stands for Self-Voltage Level, is a technique utilized to minimize po
 
 - In standby mode, Psw1, Nsw2 are in the OFF state, i.e., open circuits. Nsw1 is ON but, as it is used as a pull-up, it provides Vdd-Vth as the supply voltage for the D flip-flop. The drop is due to the resistive nature of NMOS when used as a pull-up. Similarly, Psw2 is ON, but as it is used as a pull-down, it provides a finite positive voltage instead of ground (0 volts). This virtual ground positive voltage slightly reverse biases the NMOS transistors of the D flip-flop, reducing leakage power in standby mode. The PMOS transistors of the D flip-flop also have reduced leakage power, as they are connected to a virtual supply in standby mode.
 
-
+![Circuit svl TSPC DFF](https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/97c1ac9e-e1a5-43bb-98e6-1b8946997f07)
 
 **Figure 2: Schematic Diagram of CMOS D Flip-Flop using SVL Method**
 
@@ -158,7 +158,56 @@ For further insights and simulation outcomes, please refer to the project docume
 
 ---
 
-**Note**: Insert relevant images (e.g., `schematic_diagram.png`) as needed.
+## Design Strategy 3: Modified SVL Technique applied on CMOS D-Flip Flop
+
+### Introduction
+
+Figure 3 illustrates the structure of a D Flip-Flop (DFPFP) utilizing an enhanced SVL (Self-Voltage Level) method. The DFPFP is designed using five transistors, comprising two PMOS transistors (P1 & P2) and three NMOS transistors (N1, N2, & N3).
+
+### Operation in Active Mode (clock = 1)
+
+In the active mode (when the clock signal is '1'), the following operations occur:
+
+- P1 turns ON
+- N2 turns ON
+- P2 and P3 turn OFF
+- N1 and N3 turn OFF
+
+This configuration connects the DFPFP to Vdd and ground for normal circuit operation. The behavior of the DFPFP during this state depends on the value of Din:
+
+- If Din is 0, P1, N1, N3 turn ON, while P2 and N2 turn OFF. This causes 'Q' to connect to ground, resulting in Q = 0.
+
+- If Din is 1, P1, N3 turn OFF, while N1, N2, and P2 turn ON. This configuration connects 'Q' to Vdd, resulting in Q = 1.
+
+### Operation in Standby Mode (clock = 0)
+
+In standby mode (when the clock signal is '0'), the following operations occur:
+
+- P1 and N3 turn OFF (operate as open switches)
+- N1 and N2 turn ON
+
+Due to the transistors in the pull-up network, VDD - Vth is supplied to the D Flip-Flop. Additionally:
+
+- P2 and P3 turn ON, providing a limited positive potential instead of ground (0 volts).
+
+The virtual ground positive potential moderately reverse biases the NMOS transistors of the DFF, optimizing power dissipation in standby mode. The PMOS transistors of the DFF also experience reduced leakage power, as they are connected to a virtual supply in standby mode.
+
+### Enhanced SVL Method Significance
+
+The enhanced SVL method optimizes power dissipation and minimizes leakage current flow due to the inclusion of extra two transistors. This optimization is achieved by substantially optimizing the supply potential for the flip-flop design in static mode. Power dissipation, under ideal conditions, is directly related to supply potential and current, resulting in reduced power dissipation for the same values due to the enhanced SVL method.
+
+The projected SVL technique not only optimizes power dissipation but also reduces the count of clocked transistors. This leads to an increase in the working speed of the design and optimization of dynamic power consumption. Therefore, this DFF method in standby mode is utilized to reduce power consumption.
+
+
+
+**Figure 3: DFPFP Structure using Enhanced SVL Method**
+
+For more details and simulation results, please refer to the project documentation.
+
+---
+
+
+
 
 
 
