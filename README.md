@@ -289,6 +289,10 @@ Understanding the dynamic and static power components is essential for optimizin
 
 For detailed power analysis results and further insights, please refer to the project documentation.
 
+--------
+
+## Power Simulations Graph: 
+
 
 
 
