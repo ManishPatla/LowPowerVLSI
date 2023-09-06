@@ -206,6 +206,33 @@ The projected SVL technique not only optimizes power dissipation but also reduce
 For more details and simulation results, please refer to the project documentation.
 
 ---
+## SIMULATED OUTCOMES
+
+The simulated outcomes presented here were obtained using Cadence Virtuoso tool with 180nm CMOS technology and a supply potential of 1.8V. The application of advanced techniques in CMOS D Flip-Flop (DFF) design has led to optimized power dissipation, reduced leakage current, and improved propagation delay constraints.
+
+### Simulated Transient Outcome of CMOS D Flip Flop
+
+
+
+**Figure 4: Simulated Transient Outcome of CMOS D Flip Flop**
+
+The figure above displays the simulated transient outcome of the CMOS D Flip Flop. This simulation provides insights into the performance of the design, including its response to input changes over time.
+
+### Significance of Enhanced SVL Method
+
+In particular, the application of the enhanced SVL (Self-Voltage Level) method for CMOS DFF design has yielded noteworthy results:
+
+- **Power Dissipation**: The enhanced SVL method has effectively reduced power dissipation, contributing to energy-efficient operation.
+
+- **Leakage Current**: By optimizing the supply potential and transistor behavior during standby mode, the enhanced SVL method has minimized leakage current, enhancing power efficiency.
+
+- **Propagation Delay**: The design improvements resulting from the enhanced SVL method have also led to better propagation delay constraints, enabling faster and more responsive operation.
+
+For a comprehensive analysis and detailed simulation results, please refer to the project documentation.
+
+---
+
+**Note**: Insert relevant images (e.g., `simulated_transient.png`) as needed.
 
 
 
