@@ -198,6 +198,7 @@ The enhanced SVL method optimizes power dissipation and minimizes leakage curren
 
 The projected SVL technique not only optimizes power dissipation but also reduces the count of clocked transistors. This leads to an increase in the working speed of the design and optimization of dynamic power consumption. Therefore, this DFF method in standby mode is utilized to reduce power consumption.
 
+![Modifiedsvl design ](https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/edbe59d7-b86e-4f6d-901d-c5c8295cbba8)
 
 
 **Figure 3: DFPFP Structure using Enhanced SVL Method**
