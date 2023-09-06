@@ -243,6 +243,53 @@ In particular, the application of the enhanced SVL (Self-Voltage Level) method f
 For a comprehensive analysis and detailed simulation results, please refer to the project documentation.
 
 ---
+## Power Analysis:
+
+This section provides an overview of __power analysis__, explaining dynamic and static power components and how to measure them in your CMOS D-Flip Flop design. It also highlights the significance of understanding these components for optimizing power efficiency.
+
+*The total power dissipation of a circuit comprises both __dynamic and static components__, which can be challenging to isolate in simulations. Understanding these components is crucial for optimizing power efficiency.*
+
+### Dynamic Power
+
+Dynamic power results from switching currents required to charge/discharge output loads and short-circuit (direct path) currents flowing between the pMOS and nMOS transistors as the input signal changes.
+
+*To measure dynamic power dissipation, you can use the following formula:*
+
+**Pdyn = CL * VDD^2 * freq**
+
+
+Where:
+- `Pdyn` is the dynamic power dissipation.
+- `CL` is the load capacitance.
+- `VDD` is the power supply voltage.
+- `freq` is the frequency of operation.
+
+### Static Power
+
+Static power is caused by leakage sources in the transistors, including subthreshold conduction between the source and drain and reverse bias pn-junction leakage between the source/drain and substrate. 
+
+*To measure static power dissipation, you can apply a static (DC) input signal that eliminates any switching. For digital circuits, this typically involves setting the input to either high (VDD) or low (ground), turning one side of the circuit off.*
+
+The formula to calculate static power is:
+
+**Pleak = Ileak * VDD**
+
+Where:
+- `Pleak` is the leakage power of the CMOS D-Flip Flop.
+- `Ileak` represents leakage current.
+- `VDD` is the power supply voltage.
+
+### Total Power
+
+To measure total power dissipation, you need to apply an input signal that varies with time, causing the output node to charge/discharge. For digital circuits, this involves applying a pulse input signal. The total power is the sum of dynamic and static power components.
+
+Observation: Removing the load capacitor reduces switching current to only that needed to charge/discharge parasitics at the output. As a result, the measured power will be much closer to the value measured for static power.
+
+Understanding the dynamic and static power components is essential for optimizing power consumption and efficiency in your CMOS D-Flip Flop design.
+
+For detailed power analysis results and further insights, please refer to the project documentation.
+
+
 
 
 
