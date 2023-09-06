@@ -212,11 +212,17 @@ The simulated outcomes presented here were obtained using Cadence Virtuoso tool 
 
 ### Simulated Transient Outcome of CMOS D Flip Flop
 
-
+![tspc dff simulation new](https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/2d351d53-9e72-4eb5-a910-5f549dcb2b2c)
 
 **Figure 4: Simulated Transient Outcome of CMOS D Flip Flop**
 
 The figure above displays the simulated transient outcome of the CMOS D Flip Flop. This simulation provides insights into the performance of the design, including its response to input changes over time.
+
+### Simulated Transient Outcome of CMOS D Flip Flop enforced using SVL method.
+
+
+**Figure 5: Simulated Transient Outcome of CMOS D Flip Flop enforced using svl**
+
 
 ### Significance of Enhanced SVL Method
 
