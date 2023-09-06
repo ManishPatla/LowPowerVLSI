@@ -342,10 +342,10 @@ For detailed power analysis results and further insights, please refer to the pr
 **Fig: Total Power & Dynamic Power Dissipation waveform:**
 
 
-<img width="403" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/e7e8e55b-feee-40e8-bdcc-a17b04f35078">
+<img width="400" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/e7e8e55b-feee-40e8-bdcc-a17b04f35078">
 
 
-<img width="352" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/d6312c21-fb28-460b-b8cb-d1cdc06e1c4e">
+<img width=400" alt="image" src="https://github.com/ManishPatla/LowPowerVLSI/assets/109287423/d6312c21-fb28-460b-b8cb-d1cdc06e1c4e">
 
 
 
